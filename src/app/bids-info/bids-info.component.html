@@ -11,14 +11,7 @@
   </div>
 
   <div class="bids-list">
-    <app-bid></app-bid>
-    <app-bid></app-bid>
-    <app-bid></app-bid>
-    <app-bid></app-bid>
-    <app-bid></app-bid>
-    <app-bid></app-bid>
-    <app-bid></app-bid>
-    <app-bid></app-bid>
+    <app-bid *ngFor="let bid of activeBids" [bidData]="bid"></app-bid>
   </div>
 
   <div class="listing-header">
@@ -30,12 +23,5 @@
   </div>
 
   <div class="bids-list">
-    <app-bid></app-bid>
-    <app-bid></app-bid>
-    <app-bid></app-bid>
-    <app-bid></app-bid>
-    <app-bid></app-bid>
-    <app-bid></app-bid>
-    <app-bid></app-bid>
-    <app-bid></app-bid>
+    <app-bid *ngFor="let bid of upcomingBids" [bidData]="bid"></app-bid>
   </div>

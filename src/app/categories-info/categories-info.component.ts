@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CategoriesData, featuredCelebritiesData } from '../../bids-data'; // Import the data
 
 @Component({
   selector: 'app-categories-info',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./categories-info.component.css']
 })
 export class CategoriesInfoComponent implements OnInit {
+ categories = CategoriesData;
+ celebrities = featuredCelebritiesData;
 
   constructor() { }
 

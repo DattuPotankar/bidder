@@ -1,6 +1,6 @@
 <div class="bid-card">
     <div class="item-image">
-      <img src="../../assets/images/shoe.jpg" alt="Item Image">
+      <img [src]="bidData.productImageLink" alt="{{ bidData.productName }}">
     </div>
     <div class="bid-details">
         <div class="interaction">
@@ -9,26 +9,27 @@
                   <i class="far fa-heart"></i>
                   <i class="fas fa-share"></i>
                 </div>
-                <span class="like-views">45 likes.454 views</span>
+                <span class="like-views">
+                  {{ bidData.likes}} likes.{{ bidData.views}} views</span>
               </div>
         </div>
         <div class="timer-bids">
             <div class="timer">
-              <span class="time-left">0d: 5h: 30m: 25s</span>
+              <span class="time-left">{{timeLeft}}</span>
             </div>
             <div class="bids-number">
-              <span class="bids-count">30 bids</span>
+              <span class="bids-count">{{bidData.totalBids}} bids</span>
             </div>
         </div>
-        <h3 class="product-name">Product Name</h3>
+        <h3 class="product-name">{{bidData.productName}}</h3>
         <div class="current-bid">
             <span class="current-bid-title">Current Bid</span>
           </div>
           <div class="bid-value">
-            <span>$ 875.00</span>
+            <span>$ {{bidData.currentBid}}</span>
             <i class="far fa-bookmark"></i>
           </div>
-          <button class="raise-bid-button">
+          <button class="raise-bid-button" *ngIf="bidData.isActive">
             <i class="far fa-hand-pointer raise-bid-icon"></i>
             Raise Bid
           </button>
