@@ -1,0 +1,52 @@
+.search-bar {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .search-input {
+    border: none;
+    background: none;
+    flex: 1;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .search-bar i {
+    margin-right: 10px;
+    color: #555;
+  }
+  .listing-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .header-text {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .see-all {
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    cursor: pointer;
+    color: #555;
+  }
+  
+  .see-all i {
+    margin-left: 5px;
+    color: #555;
+  }
+  .bids-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
