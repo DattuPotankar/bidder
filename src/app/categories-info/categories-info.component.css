@@ -1,0 +1,77 @@
+.listing-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+  
+.header-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+  
+.see-all {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 12px;
+  color: #555;
+}
+  
+.see-all i {
+  margin-left: 5px;
+  color: #555;
+}
+
+  
+.category-list {
+  display: flex;
+}
+
+.category-item {
+  width: 60px;
+  height: 80px; 
+  margin-right: 5px;   }
+
+.category-item img {
+  width: 50px;   height: 50px;
+  border-radius: 50%;
+}
+
+.category-name {
+  text-align: center;
+  position: relative;
+  font-size: 10px;
+  margin-top: 4px;
+}
+
+.featured-celebrities {
+  display: flex;
+}
+
+.celebrity-item {
+  background-color: #e0e0e0;
+  border-radius: 30px;
+  margin-right: 5px;
+  width: 120px;
+  height: 60px;
+}
+
+.celebrity-info {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+}
+
+.celebrity-image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;   
+  padding: 5px;
+}
+
+.celebrity-name {
+  font-size: 12px;
+  color: #555;
+}

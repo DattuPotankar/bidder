@@ -1,0 +1,23 @@
+.app-container {
+    display: flex;
+    height: 100vh;
+  }
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .sidebar {
+    width: 15%;
+    color: #000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #ccc;
+  }
+  
+  .categories-div {
+    width: 20%;
+    padding: 20px;
+  }
